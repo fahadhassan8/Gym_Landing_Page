@@ -171,6 +171,7 @@
     }
     .off-canvas-btn img{
         width: 60px;
+        height: auto;
     }
     .off-canvas-btn i, .off-canvas-btn img{
         margin-top: 1em;
@@ -202,6 +203,9 @@
     }
 }
 @media only screen and (max-width:671px){
+    .first-section{
+        height: 650px;
+    }
     .second-section{
         background-position-x: center;
         width:100%;
@@ -231,7 +235,7 @@
         gap: 0em;
     }
     .first-section{
-        height: 500px;
+        height: 580px;
     }
     .second-section{
         height: 400px;
