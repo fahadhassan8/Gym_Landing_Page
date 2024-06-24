@@ -1,11 +1,12 @@
 
 .first-section{
     width: 100%;
-    background-image: url(assets/images/bg-image-01);
-    height: 600px;
-    background-repeat: no-repeat;
+    background-image: url(assets/images/background-image-one.jpg);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
 }
 .off-canvas{
     display: none;
@@ -13,23 +14,23 @@
 .my-nav{
     display: flex;
     justify-content: space-between;
-    gap: 10em;
+    gap: 5em;
     /* position: fixed; */
 }
 .navbar-brand img{
-    width: 60px;
-    border-radius: 30px;
+    width: 100px;
+    border-radius: 25px;
     margin-left: 20px;
 }
 .Contact-item{
     display: flex;
-    gap: 2em;
+    gap: 1.5em;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 .Contact-item a {
-    font-size: 1em;
+    font-size: 1.1em;
     color:#fff;
 }
 .Contact-item a:hover {
@@ -38,7 +39,7 @@
 .nav-btn{
     color: #000;
     background-color: #e0dcdc;
-    width: 120px;
+    width: 140px;
     padding: 10px;
     outline: none;
     border-radius: 30px;
@@ -67,9 +68,16 @@
     font-weight: 700;
 }
 .first-inner-wrapper button, .second-section button{
-    color: #0a2052;
-    width: 160px;
+    color: #000;
+    background-color: #fff;
+    width: 180px;
+    font-size: 1.2em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.animate__animated:hover{
+    animation: tada;
+    animation-duration: 1s;
+
 }
 .first-inner-wrapper button:hover{
     color: #0a2052;
@@ -79,7 +87,7 @@
 }
 .second-section{
     width: 100%;
-    background-image: url(./assets/images/bg-image.jpg);
+    background-image: url(./assets/images/background-image-two.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,18 +95,37 @@
     gap: 1em;
     color: #fff;
     margin-top: 0px;
-    height: 700px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .third-section{
+    margin-bottom: -20px;
     width: 100%;
     height: 800px;
 }
 .third-section iframe{
     width: 100%;
     height: 100%;
+}
+.fourth-section{
+    height: 100vh;
+    width: 100%;
+    background-color: #0d1e25;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background-color:#192930;
+}
+.sub-box-1{
+    padding: 15px;
+    margin-top: 1em;
 }
 @media only screen and (max-width:992px) {
     .navbar{
@@ -111,40 +138,49 @@
     .offcanvas-body ul{
         display: flex !important;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* margin-top: 1em; */
+        justify-content: start;
+        gap: 0.4em;
+        margin-left: 1em;
     }
     .canvas-li a{
-        color: #000;
+        color: #424141;
     }
     .off-canvas-btn{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #0a2052;
-        text-align: center;
+        color: #fff;
+    }
+    .off-canvas-btn:hover{
+        color:#c8c5c5
     }
     .off-canvas-button {
+        width: 100%;
         display: flex;
         justify-content: center;
+        color: #424141;
+        margin-top:1em;
+        font-size: 1.2em;
     }
     .off-canvas-button button{
-        width: 180px;
+        width: 100%;
+    }
+    .off-canvas-button > button:hover {
+        background-color: #504c4c;
+        color: #fff;
     }
     .off-canvas-btn img{
         width: 60px;
-        border-radius: 30px;  
     }
     .off-canvas-btn i, .off-canvas-btn img{
         margin-top: 1em;
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     .first-section{
         height: 600px;
     }
     .second-section{
-        height: 600px;
+        height: 100vh;
     }
     .my-nav{
         gap: 0em;
@@ -165,7 +201,23 @@
         height: 100%;
     }
 }
-
+@media only screen and (max-width:671px){
+    .second-section{
+        background-position-x: center;
+        width:100%;
+        height:500px;
+        background-size:cover;
+        margin: 0px;
+    }
+    .third-section{
+        height: 400px;
+    }
+    .box{
+        flex-direction: column;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
 @media only screen and (max-width:370px) {
     .first-inner-wrapper h1, .second-section h1{
         font-size: 2.5em;
@@ -185,7 +237,7 @@
         height: 400px;
     }
     .third-section{
-        height: 350px;
+        height: 330px;
     }
     .third-section iframe{
         height: 100%;
