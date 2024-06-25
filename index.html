@@ -16,156 +16,738 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="assets/images/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="first-section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg nav-fixed">
-          <div class="container-fluid my-nav">
-            <a class="navbar-brand" href="#"
-              ><img src="./assets/images/icon.png" alt=""
-            /></a>
-            <button
-              class="navbar-toggler"
+    <header>
+      <div class="first-section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg nav-fixed">
+            <div class="container-fluid my-nav">
+              <a class="navbar-brand" href="#"
+                ><img src="./assets/images/icon.png" alt=""
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 Contact-item">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">We are GO180</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Programs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Coaches</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Club</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Stories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Free Trial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <div>
+                  <button class="btn nav-btn animate__animated" type="submit">
+                    Join Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="off-canvas">
+            <div
+              class="btn off-canvas-btn"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 Contact-item">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">We are GO180</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Programs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Coaches</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Club</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Stories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Free Trial</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-              <div>
-                <button class="btn nav-btn animate__animated" type="submit">Join Now</button>
+              <i class="fa-solid fa-bars"></i>
+              <img src="./assets/images/icon.png" alt="" />
+            </div>
+            <div
+              class="offcanvas offcanvas-start"
+              data-bs-scroll="true"
+              tabindex="-1"
+              id="offcanvasWithBothOptions"
+              aria-labelledby="offcanvasWithBothOptionsLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title"
+                  id="offcanvasWithBothOptionsLabel"
+                ></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="navbar-nav me-auto mb-2 mb-lg-0 Contact-item canvas-li"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">We are GO180</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Programs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Coaches</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Club</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Stories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Free Trial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <div class="off-canvas-button">
+                  <button class="btn nav-btn animate__animated" type="submit">
+                    Join Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </nav>
+        </div>
 
-        <div class="off-canvas">
-            <div class="btn off-canvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                <i class="fa-solid fa-bars"></i> <img src="./assets/images/icon.png" alt=""/>
-            </div>
-          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 Contact-item canvas-li">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">We are GO180</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Programs</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Coaches</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Club</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Stories</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Free Trial</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                  <div class="off-canvas-button">
-                    <button class="btn nav-btn animate__animated" type="submit">Join Now</button>
-                  </div>
-            </div>
-          </div>
-              </div>
-      </div>
-
-      <div class="first-inner-wrapper">
-        <h1>
-          <span style="font-size: 1.3em">B</span>uild your <br />
-          tomorrow
-        </h1>
-        <p>
-          Bij GO180 doen we er alles aan om jou je beste zelf te laten worden,
-          de rest van je leven.
-        </p>
-        <button class="btn nav-btn animate__animated" type="submit">Start today</button>
-      </div>
-    </div>
-
-    <div class="second-section">
-        <h1>
-            <span style="font-size: 1.3em">P</span>rograms
+        <div class="first-inner-wrapper">
+          <h1>
+            <span style="font-size: 1.3em">B</span>uild your <br />
+            tomorrow
           </h1>
           <p>
-            Onze programma’s zijn speciaal ontworpen om jou een gezond en fit leven te laten en blijven leiden.
+            Bij GO180 doen we er alles aan om jou je beste zelf te laten worden,
+            de rest van je leven.
           </p>
-          <button class="btn nav-btn animate__animated" type="submit">Our Programs</button>
-    </div>
-    <div class="third-section">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/eiCmdsG9Xjc?si=RXUmsO1GpxQrSrm3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <div class="fourth-section">
-      <h2 style="font-weight: bolder;font-family: Arial, Helvetica, sans-serif;color: #fff;text-align: center;padding: 25px 0px ">
-        Wat onze klanten zeggen
-      </h2>
-      <div class="box">
-        <div class="sub-box-1">
-         <p style="font-size: 2em;font-weight: bold;"> <span style="color: blue;">G</span><span style="color: #8a0404;">o</span><span style="color: #afaf03;">o</span><span style="color: blue;">g</span><span style="color: #008000;">l</span><span style="color: #8a0404;">e</span>
-          <span style="color: #fff;"> Beoordeling </sp>
+          <button class="btn nav-btn animate__animated" type="submit">
+            Start today
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="second-section">
+        <h1><span style="font-size: 1.3em">P</span>rograms</h1>
+        <p>
+          Onze programma’s zijn speciaal ontworpen om jou een gezond en fit
+          leven te laten en blijven leiden.
         </p>
-        <p> <strong style="color: #fff; font-size: 1.4em;font-family: Arial, Helvetica, sans-serif;">4.8</strong> <img style="width: 70px;height: 45px;margin-right: 0.4em;" src="./assets/images/stars.png" alt=""> 
-          <span style="color:#899295;margin-right: 0.4em;">62. </span>
-          <span style="color:#899295;font-size: 1.2em;margin-right: 0.4em;" > beoordelingen</span> </p>
-        </div>
-        <div class="sub-box-btn">
-          <button style="width: 12em;" type="button" class="btn btn-primary">Primary</button>
+        <button class="btn nav-btn animate__animated" type="submit">
+          Our Programs
+        </button>
+      </div>
+      <div class="third-section">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/eiCmdsG9Xjc?si=RXUmsO1GpxQrSrm3"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="fourth-section">
+        <h2
+          style="
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0px;
+          "
+        >
+          Wat onze klanten zeggen
+        </h2>
+        <div class="box">
+          <div class="sub-box-1">
+            <p style="font-size: 2em; font-weight: bold">
+              <span style="color: blue">G</span
+              ><span style="color: #8a0404">o</span
+              ><span style="color: #afaf03">o</span
+              ><span style="color: blue">g</span
+              ><span style="color: #008000">l</span
+              ><span style="color: #8a0404">e</span>
+              <span style="color: #fff"> Beoordeling </span>
+            </p>
+            <p>
+              <strong
+                style="
+                  color: #fff;
+                  font-size: 1.4em;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+                >4.8</strong
+              >
+              <img
+                style="width: 70px; height: 45px; margin-right: 0.4em"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <span style="color: #899295; margin-right: 0.4em">62. </span>
+              <span
+                style="color: #899295; font-size: 1.2em; margin-right: 0.4em"
+              >
+                beoordelingen</span
+              >
+            </p>
+          </div>
+          <div class="sub-box-btn">
+            <button style="width: 12em" type="button" class="btn btn-primary">
+              Primary
+            </button>
+          </div>
         </div>
       </div>
-      <div class="boxes">
-
+      <div class="fifth-section">
+        <div class="boxes">
+          <div class="boxes-wrapper">
+            <div class="boxes-inner-wrapper-1">
+              <img
+                style="width: 100px; height: 60px"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #fff;
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum ut aperiam architecto consectetur incidunt atque
+                inventore accusantium.
+              </p>
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #899295;
+                "
+              >
+                Lees Verder
+              </p>
+              <p style="font-size: 2em; font-weight: bold">
+                <span style="color: blue; font-size: 1.3em">G</span
+                ><span style="color: #8a0404">o</span
+                ><span style="color: #afaf03">o</span
+                ><span style="color: blue">g</span
+                ><span style="color: #008000">l</span
+                ><span style="color: #8a0404">e</span>
+              </p>
+            </div>
+            <div class="boxes-inner-wrapper-2">
+              <div class="boxes-inner-wrapper-img">
+                <img
+                  style="width: 40px; height: 40px; border-radius: 20px"
+                  src="./assets/images/user.jfif"
+                  alt=""
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1em;
+                  color: #fff;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: 500;
+                  padding-top: 0.8em;
+                "
+              >
+                Rudolf Das
+              </p>
+            </div>
+          </div>
+          <div class="boxes-wrapper">
+            <div class="boxes-inner-wrapper-1">
+              <img
+                style="width: 100px; height: 60px"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #fff;
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum ut aperiam architecto consectetur incidunt atque
+                inventore accusantium.
+              </p>
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #899295;
+                "
+              >
+                Lees Verder
+              </p>
+              <p style="font-size: 2em; font-weight: bold">
+                <span style="color: blue; font-size: 1.3em">G</span
+                ><span style="color: #8a0404">o</span
+                ><span style="color: #afaf03">o</span
+                ><span style="color: blue">g</span
+                ><span style="color: #008000">l</span
+                ><span style="color: #8a0404">e</span>
+              </p>
+            </div>
+            <div class="boxes-inner-wrapper-2">
+              <div class="boxes-inner-wrapper-img">
+                <img
+                  style="width: 40px; height: 40px; border-radius: 20px"
+                  src="./assets/images/user-2.jfif"
+                  alt=""
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1em;
+                  color: #fff;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: 500;
+                  padding-top: 0.8em;
+                "
+              >
+                Maira
+              </p>
+            </div>
+          </div>
+          <div class="boxes-wrapper">
+            <div class="boxes-inner-wrapper-1">
+              <img
+                style="width: 100px; height: 60px"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #fff;
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum ut aperiam architecto consectetur incidunt atque
+                inventore accusantium.
+              </p>
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #899295;
+                "
+              >
+                Lees Verder
+              </p>
+              <p style="font-size: 2em; font-weight: bold">
+                <span style="color: blue; font-size: 1.3em">G</span
+                ><span style="color: #8a0404">o</span
+                ><span style="color: #afaf03">o</span
+                ><span style="color: blue">g</span
+                ><span style="color: #008000">l</span
+                ><span style="color: #8a0404">e</span>
+              </p>
+            </div>
+            <div class="boxes-inner-wrapper-2">
+              <div class="boxes-inner-wrapper-img">
+                <img
+                  style="width: 40px; height: 40px; border-radius: 20px"
+                  src="./assets/images/user-3.jfif"
+                  alt=""
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1em;
+                  color: #fff;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: 500;
+                  padding-top: 0.8em;
+                "
+              >
+                Naira
+              </p>
+            </div>
+          </div>
+          <div class="boxes-wrapper">
+            <div class="boxes-inner-wrapper-1">
+              <img
+                style="width: 100px; height: 60px"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #fff;
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum ut aperiam architecto consectetur incidunt atque
+                inventore accusantium.
+              </p>
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #899295;
+                "
+              >
+                Lees Verder
+              </p>
+              <p style="font-size: 2em; font-weight: bold">
+                <span style="color: blue; font-size: 1.3em">G</span
+                ><span style="color: #8a0404">o</span
+                ><span style="color: #afaf03">o</span
+                ><span style="color: blue">g</span
+                ><span style="color: #008000">l</span
+                ><span style="color: #8a0404">e</span>
+              </p>
+            </div>
+            <div class="boxes-inner-wrapper-2">
+              <div class="boxes-inner-wrapper-img">
+                <img
+                  style="width: 40px; height: 40px; border-radius: 20px"
+                  src="./assets/images/user-4.jfif"
+                  alt=""
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1em;
+                  color: #fff;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: 500;
+                  padding-top: 0.8em;
+                "
+              >
+                Mariline
+              </p>
+            </div>
+          </div>
+          <div class="boxes-wrapper">
+            <div class="boxes-inner-wrapper-1">
+              <img
+                style="width: 100px; height: 60px"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #fff;
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum ut aperiam architecto consectetur incidunt atque
+                inventore accusantium.
+              </p>
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #899295;
+                "
+              >
+                Lees Verder
+              </p>
+              <p style="font-size: 2em; font-weight: bold">
+                <span style="color: blue; font-size: 1.3em">G</span
+                ><span style="color: #8a0404">o</span
+                ><span style="color: #afaf03">o</span
+                ><span style="color: blue">g</span
+                ><span style="color: #008000">l</span
+                ><span style="color: #8a0404">e</span>
+              </p>
+            </div>
+            <div class="boxes-inner-wrapper-2">
+              <div class="boxes-inner-wrapper-img">
+                <img
+                  style="width: 40px; height: 40px; border-radius: 20px"
+                  src="./assets/images/user-5.jfif"
+                  alt=""
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1em;
+                  color: #fff;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: 500;
+                  padding-top: 0.8em;
+                "
+              >
+                Jennifer
+              </p>
+            </div>
+          </div>
+          <div class="boxes-wrapper">
+            <div class="boxes-inner-wrapper-1">
+              <img
+                style="width: 100px; height: 60px"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #fff;
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum ut aperiam architecto consectetur incidunt atque
+                inventore accusantium.
+              </p>
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #899295;
+                "
+              >
+                Lees Verder
+              </p>
+              <p style="font-size: 2em; font-weight: bold">
+                <span style="color: blue; font-size: 1.3em">G</span
+                ><span style="color: #8a0404">o</span
+                ><span style="color: #afaf03">o</span
+                ><span style="color: blue">g</span
+                ><span style="color: #008000">l</span
+                ><span style="color: #8a0404">e</span>
+              </p>
+            </div>
+            <div class="boxes-inner-wrapper-2">
+              <div class="boxes-inner-wrapper-img">
+                <img
+                  style="width: 40px; height: 40px; border-radius: 20px"
+                  src="./assets/images/user-6.jfif"
+                  alt=""
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1em;
+                  color: #fff;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: 500;
+                  padding-top: 0.8em;
+                "
+              >
+                Andrew Smith
+              </p>
+            </div>
+          </div>
+          <div class="boxes-wrapper">
+            <div class="boxes-inner-wrapper-1">
+              <img
+                style="width: 100px; height: 60px"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #fff;
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum ut aperiam architecto consectetur incidunt atque
+                inventore accusantium.
+              </p>
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #899295;
+                "
+              >
+                Lees Verder
+              </p>
+              <p style="font-size: 2em; font-weight: bold">
+                <span style="color: blue; font-size: 1.3em">G</span
+                ><span style="color: #8a0404">o</span
+                ><span style="color: #afaf03">o</span
+                ><span style="color: blue">g</span
+                ><span style="color: #008000">l</span
+                ><span style="color: #8a0404">e</span>
+              </p>
+            </div>
+            <div class="boxes-inner-wrapper-2">
+              <div class="boxes-inner-wrapper-img">
+                <img
+                  style="width: 40px; height: 40px; border-radius: 20px"
+                  src="./assets/images/user-7.jfif"
+                  alt=""
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1em;
+                  color: #fff;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: 500;
+                  padding-top: 0.8em;
+                "
+              >
+                Harry
+              </p>
+            </div>
+          </div>
+          <div class="boxes-wrapper">
+            <div class="boxes-inner-wrapper-1">
+              <img
+                style="width: 100px; height: 60px"
+                src="./assets/images/stars.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #fff;
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum ut aperiam architecto consectetur incidunt atque
+                inventore accusantium.
+              </p>
+              <p
+                style="
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #899295;
+                "
+              >
+                Lees Verder
+              </p>
+              <p style="font-size: 2em; font-weight: bold">
+                <span style="color: blue; font-size: 1.3em">G</span
+                ><span style="color: #8a0404">o</span
+                ><span style="color: #afaf03">o</span
+                ><span style="color: blue">g</span
+                ><span style="color: #008000">l</span
+                ><span style="color: #8a0404">e</span>
+              </p>
+            </div>
+            <div class="boxes-inner-wrapper-2">
+              <div class="boxes-inner-wrapper-img">
+                <img
+                  style="width: 40px; height: 40px; border-radius: 20px"
+                  src="./assets/images/user-8.jfif"
+                  alt=""
+                />
+              </div>
+              <p
+                style="
+                  font-size: 1em;
+                  color: #fff;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: 500;
+                  padding-top: 0.8em;
+                "
+              >
+                Joseph
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-img">
+          <img src="./assets/images/icon.png" alt="" />
+        </div>
+        <div class="footer-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="footer-content">
+          <p>
+            Algemene <br />
+            voolwaarden
+          </p>
 
-    </div>
-</body>
+          <p>Disclaimer</p>
+
+          <p>Privacy</p>
+
+          <p>Contact</p>
+        </div>
+      </div>
+      <div class="dev-name">
+        <p>© 2024-25 Fahad Hassan. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
